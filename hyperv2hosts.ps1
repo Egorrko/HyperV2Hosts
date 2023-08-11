@@ -20,8 +20,7 @@ $vmList = Get-VM | Where-Object { $_.State -eq 'Running' } | ForEach-Object {
 }
 
 # Write the information to the hosts file
-# $hostsFilePath = "$env:SystemRoot\System32\drivers\etc\hosts"
-$hostsFilePath = "t.txt"
+$hostsFilePath = "$env:SystemRoot\System32\drivers\etc\hosts"
 # Read the contents of the hosts file
 $hostsContent = Get-Content -Path $hostsFilePath
 
